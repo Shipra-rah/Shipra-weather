@@ -8,17 +8,37 @@ function Searchbar({ setCity }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex items-center w-80 h-12 rounded-full bg-white/80 shadow-md px-2 gap-2"
+      className="
+        flex items-center 
+        w-full max-w-md 
+        h-12 
+        rounded-full 
+        bg-white/80 
+        shadow-md 
+        px-2 gap-2
+        sm:w-80
+      "
     >
       <input
         type="text"
         name="city"
         placeholder="Enter City..."
-        className="flex-grow px-4 py-2 text-sm text-gray-700 placeholder-gray-400 bg-transparent border-none focus:outline-none"
+        className="          flex-grow           px-4 py-2 
+          text-sm           text-gray-700           placeholder-gray-400           bg-transparent           border-none           focus:outline-none
+        "
       />
       <button
         type="submit"
-        className="px-4 py-1 text-lg font-medium text-white bg-green-500 rounded-full hover:bg-green-600 transition-all"
+        className="
+          px-4 py-1 
+          text-lg font-medium 
+          text-white 
+          bg-green-500 
+          rounded-full 
+          hover:bg-green-600 
+          transition-all
+          min-w-[80px]
+        "
       >
         Search
       </button>
